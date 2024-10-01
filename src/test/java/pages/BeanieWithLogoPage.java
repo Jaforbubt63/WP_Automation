@@ -8,9 +8,10 @@ public class BeanieWithLogoPage extends BasePage {
         super(driver);
     }
 
-    By beanieWithLogo_button = By.xpath("//div[@id='content-wrap']");
+    By beanieWithLogo_button = By.xpath("(//a[@title='Beanie with Logo'])[1]");
 
 
     public void click_on_beanie_in_button() {
         clickOnElement(beanieWithLogo_button);
+    }
 }
