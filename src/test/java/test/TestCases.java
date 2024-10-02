@@ -14,6 +14,7 @@ public class TestCases extends BaseDriver {
     public void login_to_wordpress() throws InterruptedException {
 
         SearchPage searchPage = new SearchPage(driver);
+        BeaniePage beaniePage = new BeaniePage(driver);
         AdditionalInformationPage additionalInformationPage = new AdditionalInformationPage(driver);
         ReviewsPage reviewsPage = new ReviewsPage(driver);
         YourRatingPage yourRatingPage = new YourRatingPage(driver);
@@ -26,7 +27,8 @@ public class TestCases extends BaseDriver {
 
 
         searchPage.click_on_search_in_button("Beanie");
-        Assert.assertEquals(driver.getCurrentUrl(),"https://for-qa-candidate.s4-tastewp.com/?s=Beanie");
+        beaniePage.click_on_beanie_in_button();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://for-qa-candidate.s4-tastewp.com/product/beanie-with-logo/");
         additionalInformationPage.click_on_additional_in_button();
         reviewsPage.click_on_review_in_button();
         yourRatingPage.click_on_yourRating_in_button();
