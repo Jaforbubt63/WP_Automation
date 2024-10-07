@@ -16,4 +16,4 @@ public class SwitchSettingPage {
     public void click_on_switchSetting_in_button(){
         switchSetting_button.click();
     }
-}e
+}

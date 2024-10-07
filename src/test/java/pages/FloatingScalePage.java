@@ -13,6 +13,6 @@ public class FloatingScalePage extends BasePage {
 
     public void click_on_floatingScale_in_button() {
 
-        sendText(floatingScale_button, "220");
+        sendText(floatingScale_button, "222");
     }
 }
